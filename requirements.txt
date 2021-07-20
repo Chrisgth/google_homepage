@@ -6,5 +6,10 @@
  [x]Logo
  [x]Searchbar with the accompanying buttons
  [x]Footer with the accompanying buttons
-[]Move elements around to their proper position replicating Google
+[x]Move elements around to their proper position replicating Google
 []Style the webpage 
+ []Download the google font and apply it
+ []Merge the search icon and searchbar into 1 item
+ []Create backgrounds for search buttons and edit font-size
+ []Create round hover backgrounds for the 9dots and gmail avatar images
+ []Finish up spacing
