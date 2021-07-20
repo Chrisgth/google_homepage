@@ -3,6 +3,7 @@
 body, html{
     min-height: 100%;
     margin: 0;
+    font-family: Roboto;
 }
 header{
     width: 100%;
@@ -31,16 +32,42 @@ nav{
     flex-direction: row;
 }
 #searchbar{
-    display: flex;
+    position: relative;
+    display: inline-flex;
     justify-content: center;
     flex-direction: row;
-    margin-top: 20px;
+    padding: 5px 5px 5px 5px;
+    margin: auto;
+    width: auto;
+    height: auto;
+    border: 1px solid #dfe1e5;
+    gap: 10px;
+    border-radius: 20px;
+}
+#searchbar:hover{
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.20);
+}
+#searchbar:focus-within{
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.20);
 }
 #sbuttons{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 30px;
+    gap: 10px;    
+}
+.sbutton{
+    border: 0;
+    background-color: rgba(0,0,0,0.05);
+    padding: 10px 10px 10px 10px;
+    font-size: 16px;
+    font-family: Roboto;
+    border-radius: 2px;
+}
+.sbutton:hover{
+    cursor:pointer;
+    box-shadow: -0.5px -0.5px 1.5px rgba(0,0,0,0.5), 0.5px 0.5px 1.5px rgba(0,0,0,0.5);
 }
 #fleft{
     display: flex;
@@ -52,6 +79,17 @@ nav{
     justify-content: flex-end;
     gap: 20px;
 }
+.gmaillogo{
+    border-radius: 50%;
+    padding: 4px 4px 4px 4px;
+}
+#dots:hover{
+    background-color: rgba(0,0,0,0.15);
+}
+
+.gmaillogo:hover{
+    background-color: rgba(0,0,0,0.15);
+}
 footer{
     position: fixed;
     bottom: 0;
@@ -62,48 +100,77 @@ footer{
     padding: 20px 20px 20px 20px;
     background-color: rgb(242,242,242)
 }
-.hfelements{
-    
+#sbin:focus{    
+    outline: 0;
+}
+.hbut{
+    text-decoration: none;
+    font-size: 13px;
+}
+.hbut:link{
+    color: black;
+}
+.hbut:visited{
+    color: black;
+}
+.hbut:hover{
+    text-decoration: underline;
+}
+.fbut{
+    text-decoration: none;
+    font-size: 15px;  
+}
+.fbut:link{
+    color: gray;
+}
+.fbut:visited{
+    color: gray;
+}
+.fbut:hover{
+    text-decoration: underline;
 }
 </style>
 <html>
 <head>
     <title>Google</title>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header>
     <nav>
-        <a href="#" style="position: relative; top: 5px;">Gmail</a>
-        <a href="#" style="position: relative; top: 5px;"">Images</a>
-        <a href="#"><img style="max-height: 20px; max-width: 20px; position: relative; top: 5px;" src="images/9dots.png" alt="9 Dots For Apps"></a>
-        <a href="#"><img src="images/gmailLogo.jpg" alt="Personal Gmail picture"></a>
+        <a href="#" style="margin-top: auto; margin-bottom: auto;" class="hbut">Gmail</a>
+        <a href="#" style="margin-top: auto; margin-bottom: auto; margin-right: 10px;" class="hbut">Images</a>
+        <a href="#" style="margin-top: auto; margin-bottom: auto; height:40px; border-radius: 50%;" id="dots"><img style="max-height: 20px; max-width: 20px; padding: 10px 10px 10px 10px;" src="images/9dots.png" alt="9 Dots For Apps"></a>
+        <a href="#" style="margin-top: auto; margin-bottom: auto; height:40px;"><img src="images/gmailLogo.jpg" alt="Personal Gmail picture"class="gmaillogo"></a>
     </nav>
     </header>
     <main>
         <div id="logo">
         <img src="images/glogo.png" alt="The Google Logo" id="logoimg">
         </div>
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
         <div id=searchbar>
-        <img style = "max-height: 20px; max-width: 20px;" src="images/sbmg.png" alt="Magnifying Glass">
-        <input type="text">
+        <img style = "max-height: 20px; max-width: 20px; margin: auto;" src="images/sbmg.png" alt="Magnifying Glass">
+        <input style ="border: 0; width: 527px; height: 32px; font-size: 16px;" type="text" id="sbin">
+        </div>
         </div>
         <div id=sbuttons>
-        <button>Google Search</button>
-        <button>I'm Feeling Lucky</button>
+        <button class="sbutton">Google Search</button>
+        <button class="sbutton">I'm Feeling Lucky</button>
         </div>
     </main>
     <footer>
             <div id=fleft>
-        <a href="#">About</a>
-        <a href="#">Advertising</a>
-        <a href="#">Business</a>
-        <a href="#">How Search Works</a>
+        <a href="#" class="fbut">About</a>
+        <a href="#" class="fbut">Advertising</a>
+        <a href="#" class="fbut">Business</a>
+        <a href="#" class="fbut">How Search Works</a>
             </div>
             <div id=fright>
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Settings</a>
+        <a href="#" class="fbut">Privacy</a>
+        <a href="#" class="fbut">Terms</a>
+        <a href="#" class="fbut">Settings</a>
             </div>
     </footer>
 </body>

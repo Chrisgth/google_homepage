@@ -7,9 +7,11 @@
  [x]Searchbar with the accompanying buttons
  [x]Footer with the accompanying buttons
 [x]Move elements around to their proper position replicating Google
-[]Style the webpage 
- []Download the google font and apply it
- []Merge the search icon and searchbar into 1 item
- []Create backgrounds for search buttons and edit font-size
- []Create round hover backgrounds for the 9dots and gmail avatar images
- []Finish up spacing
+[x]Style the webpage 
+ [x]Download the google font and apply it
+ [x]Merge the search icon and searchbar into 1 item
+ [x]Create backgrounds for search buttons and edit font-size
+ [x]Create round hover backgrounds for the 9dots and gmail avatar images
+ [x]Create a class for buttons so that they mimic google's buttons
+ [x]Finish up spacing
+[]Optionally cleanup the code and streamline everything, other than that the project is done.
