@@ -1,6 +1,70 @@
 <!DOCTYPE html>
 <style>
+body, html{
+    min-height: 100%;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 54px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    width: calc(100% - 20px);
+    gap: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+#logoimg{
+    position: relative;
+    margin-top: auto;
+    max-height: 92px;
+    max-width: 272px;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    height: 290px;
+    flex-direction: row;
+}
+#searchbar{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+}
+#sbuttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+}
+#fleft{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+#fright{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(242,242,242)
+}
+.hfelements{
     
+}
 </style>
 <html>
 <head>
@@ -8,27 +72,35 @@
     <meta charset="utf-8">
 </head>
 <body>
+    <header>
     <nav>
-        <a href="#">Gmail</a>
-        <a href="#">Images</a>
+        <a href="#" style="position: relative; top: 5px;">Gmail</a>
+        <a href="#" style="position: relative; top: 5px;"">Images</a>
+        <a href="#"><img style="max-height: 20px; max-width: 20px; position: relative; top: 5px;" src="images/9dots.png" alt="9 Dots For Apps"></a>
         <a href="#"><img src="images/gmailLogo.jpg" alt="Personal Gmail picture"></a>
     </nav>
+    </header>
     <main>
-        <div>
-        <img src="images/glogo.png" alt="The Google Logo">
+        <div id="logo">
+        <img src="images/glogo.png" alt="The Google Logo" id="logoimg">
+        </div>
+        <div id=searchbar>
+        <img style = "max-height: 20px; max-width: 20px;" src="images/sbmg.png" alt="Magnifying Glass">
         <input type="text">
+        </div>
+        <div id=sbuttons>
         <button>Google Search</button>
         <button>I'm Feeling Lucky</button>
         </div>
     </main>
     <footer>
-            <div>
+            <div id=fleft>
         <a href="#">About</a>
         <a href="#">Advertising</a>
         <a href="#">Business</a>
         <a href="#">How Search Works</a>
             </div>
-            <div>
+            <div id=fright>
         <a href="#">Privacy</a>
         <a href="#">Terms</a>
         <a href="#">Settings</a>
